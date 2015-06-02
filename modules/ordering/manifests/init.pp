@@ -39,7 +39,7 @@ class ordering {
   stage { 'post-run':
     require => Stage['main'],
   }
-  include ordering::epel
+  #include ordering::epel
   include ordering::mysql
 
   notify { 'This should come after mysql class':
