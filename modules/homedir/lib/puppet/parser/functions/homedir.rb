@@ -4,7 +4,7 @@ Puppet::Parser::Functions.newfunction(
   :arity => 1,
   :doc   => 'Returns the home dir of a username'
 ) do |args|
-  user - args [0]
+  user = args [0]
   raise ArgumentError, "Expects a string" unless user.class == String
 
   case user
