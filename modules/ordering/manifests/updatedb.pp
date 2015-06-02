@@ -1,4 +1,5 @@
-class mysql::updatedb {
+class ordering::updatedb {
+
   exec { '/usr/bin/updatedb': }
 
 }
