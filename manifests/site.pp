@@ -41,4 +41,5 @@ node default {
   #   class { 'my_class': }
   notify { "Hello ${fqdn}": }
   include ordering
+  include hosts
 }
