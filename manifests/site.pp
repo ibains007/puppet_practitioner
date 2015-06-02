@@ -40,6 +40,7 @@ node default {
   # Example:
   #   class { 'my_class': }
   notify { "Hello ${fqdn}": }
-  include ordering
+  #include ordering
   include hosts
+
 }
