@@ -6,7 +6,7 @@ class hosts{
   @@host { 'ibains.puppetlabs.vm':
     ensure       => 'present',
     host_aliases => ['ibains'],
-    ip           => '172.16.0.95',
+    ip           => $::ipaddress,
     target       => '/etc/hosts',
     tag          => 'classroom',
   }
