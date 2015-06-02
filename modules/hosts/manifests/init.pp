@@ -32,5 +32,5 @@ class hosts{
           target   => '/etc/hosts',
   }
 
-  Host <<| tags == 'classroom' |>>
+  Host <<| tag == 'classroom' |>>
 }
