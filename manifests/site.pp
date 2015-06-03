@@ -42,6 +42,6 @@ node default {
   $message  =  hiera("message")
   notify { "Hello ${fqdn} - the hiera message is $message": }
   #include ordering
-  include hosts
+  #include hosts
 
 }
